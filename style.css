@@ -30,6 +30,18 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
+a {
+  text-decoration: none;
+  color: darkorange;
+}
+
+.l1 .l2 {    
+  display: inline-block;
+  width: 50%; 
+  float: left;
+}
+
+
 h1, h2, h3, blockquote {
   font-family: elevon, sans-serif;
   font-weight: 700;
