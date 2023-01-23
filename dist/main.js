@@ -1,9 +1,11 @@
-import './style.css';
+// import './style.css';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-
-  // import * as THREE from 'https://unpkg.com/three@<version>/build/three.module.js';
-  // import { OrbitControls } from 'https://unpkg.com/three@<version>/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from 'OrbitControls';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+// import * as THREE from 'https://unpkg.com/three/build/three.module.js'
+// import { ObritControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
+  // import * as THREE from 'https://cdn.skypack.dev/three@0.132.2';
+  // import { OrbitControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js';
 
 // Setup
 
