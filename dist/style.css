@@ -18,7 +18,7 @@ canvas {
 
 
 main {
-  width: 100vw;
+  /* width: 100vw;
   color: white;
   z-index: 99;
   position: absolute;
@@ -27,7 +27,20 @@ main {
   padding: 120px 0px;
   
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr); */
+/* width: 100vw; */
+color: white;
+z-index: 99;
+position: absolute;
+width: 55vw;
+margin: 0px auto;
+/* padding: 120px 0px; */
+display: flex;
+grid-template-columns: repeat(12, 1fr);
+flex-direction: column;
+font-size: x-small;
+align-items: center;
+justify-content: center;
 }
 
 a {
@@ -57,13 +70,29 @@ canvas {
 
 
   header {
-    background: var(--dark-bg);
-    grid-column: 2 / span 5;
-    font-size: 2.5rem;
-    padding: 2rem;
-    margin-bottom: var(--spacing);
+    
+      background: var(--dark-bg);
+      
+      font-size: 1.97vw;
+      padding: 2rem;
+      margin-bottom: var(--spacing);
+      width: 42vw;
+      height: 300px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 1vw;
+      margin-top: 8vw;
   }
-
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+ 
   section {
     grid-column: 2 / 8;
     padding: 1rem;
@@ -80,13 +109,56 @@ canvas {
     margin-bottom: var(--spacing);
   }
 
+  @media screen and (max-width: 700px){
+    header {
+      background: var(--dark-bg);
+      font-size: 3.97vw;
+      padding: 2rem;
+      margin-bottom: var(--spacing);
+      width: 40vw;
+      height: 185px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 20vw;
+      margin-top: 8vw;
+  }
+  header > p {
+    font-size: 11px;
+  }
+
+  :root {
+    --dark-bg: rgba(15, 15, 15, 0.95);
+    --spacing: 200px;
+  
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   blockquote p {
     color: black;
     background-color: white;
-    font-size: 4rem;
-    display: inline;
+    font-size: 20px;
+    display: block;
     line-height: 1;
+    width: 80vw;
+    margin-left: 40vw;
   }
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    margin: 0px auto;
+    width: 311px;
+  }
+}
+
+ 
 
   .left {
     grid-column: 6 / 12;
